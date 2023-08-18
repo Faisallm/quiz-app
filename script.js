@@ -1,38 +1,46 @@
 const questions = [
     {
-        question: "Which is the largest animal in the world?",
+        question: "Who is the most Beautiful girl 😍 in the world?",
         answers: [
-            {text: "Shark", correct: false},
-            {text: "Blue whale", correct: true},
-            {text: "Elephant", correct: false},
-            {text: "Giraffe", correct: false},
+            {text: "Aisha", correct: false},
+            {text: "Amina Faisal Muhammad", correct: true},
+            {text: "Khadija", correct: false},
+            {text: "Ummukulthum", correct: false},
         ]
     },
     {
-        question: "Which is the largest desert in the world?",
+        question: "Which is the naughtiest/troublemaker?",
         answers: [
-            {text: "Kalahari", correct: false},
-            {text: "Gobi", correct: false},
-            {text: "Sahara", correct: false},
-            {text: "Antartica", correct: true},
+            {text: "Amimi 💕", correct: true},
+            {text: "Faisal 💙", correct: false},
         ]
     },
     {
-        question: "Which is the smallest continent in the world?",
+        question: "Which is the calm/peacemaker?",
         answers: [
-            {text: "Asia", correct: false},
-            {text: "Australia", correct: true},
-            {text: "Arctic", correct: false},
-            {text: "Africa", correct: false},
+            {text: "Amimi 💕", correct: false},
+            {text: "Faisal  💙", correct: true},
         ]
     },
     {
-        question: "Which is the smallest country in the world?",
+        question: "Who is the sexiest woman  🍒🍑 in the world?",
         answers: [
-            {text: "Vatican City", correct: true},
-            {text: "Bhutan", correct: false},
-            {text: "Nepal", correct: false},
-            {text: "Sri Lanka", correct: false},
+            {text: "Hadiza", correct: false},
+            {text: "Humaira", correct: false},
+            {text: "Zainab", correct: false},
+            {text: "Amina", correct: true},
+        ]
+    },
+    {
+        question: "Who are you 🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♀️ from?",
+        answers: [
+            {text: "Faisal", correct: true},
+        ]
+    },
+    {
+        question: "Who do you want to spend the rest of your life with?💃💃",
+        answers: [
+            {text: "Faisal", correct: true},
         ]
     },
 ]
@@ -112,7 +120,23 @@ function handleNextButton() {
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of
-    ${questions.length}!`
+    ${questions.length}! ❤️❤️❤️😘😘😘💋💋💋`
+    
+    let img = document.createElement('img')
+    img.src = 'faisal.jpeg'
+    img.style.width = "100px";
+    img.style.height= "100px";
+    img.style.borderRadius = "4px";
+    questionElement.appendChild(img)
+    
+    let audio = document.createElement('audio');
+    audio.controls = 'autoplay';
+    audio.src = 'habibi.mp3';
+    audio.type = 'audio/mpeg';
+    audio.autoplay = true;
+    questionElement.appendChild(audio)
+    
+
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
